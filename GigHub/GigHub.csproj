@@ -205,9 +205,20 @@
     <Compile Include="Migrations\201611051801558_InitialModel.Designer.cs">
       <DependentUpon>201611051801558_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201611052010458_CreateGigTable.cs" />
+    <Compile Include="Migrations\201611052010458_CreateGigTable.Designer.cs">
+      <DependentUpon>201611052010458_CreateGigTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611060316496_PopulateGenresTable.cs" />
+    <Compile Include="Migrations\201611060316496_PopulateGenresTable.Designer.cs">
+      <DependentUpon>201611060316496_PopulateGenresTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\Genre.cs" />
+    <Compile Include="Models\Gig.cs" />
+    <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -287,6 +298,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201611051801558_InitialModel.resx">
       <DependentUpon>201611051801558_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611052010458_CreateGigTable.resx">
+      <DependentUpon>201611052010458_CreateGigTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611060316496_PopulateGenresTable.resx">
+      <DependentUpon>201611060316496_PopulateGenresTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
